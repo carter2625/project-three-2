@@ -1,0 +1,35 @@
+[
+    {
+        "weekDate" : "1",
+        "completionTime" : "2",
+        "title" : "Introduction",
+        "info" : "Why take this course?",
+        "videos" : "4",
+        "courses" : "some stuff",
+        "readings" : "11",
+        "quizzes" : "0",
+        "opened" : false
+    },
+    {
+        "weekDate" : "2",
+        "completionTime" : "3",
+        "title" : "Body 1",
+        "info" : "What is this course",
+        "videos" : "3",
+        "courses" : "more stuff",
+        "readings" : "2",
+        "quizzes" : "1",
+        "opened" : false
+    },
+    {
+        "weekDate" : "3",
+        "completionTime" : "4",
+        "title" : "Body 2",
+        "info" : "Whats next",
+        "videos" : "2",
+        "courses" : "a lot of stuff",
+        "readings" : "4",
+        "quizzes" : "1",
+        "opened" : false
+    }
+]
