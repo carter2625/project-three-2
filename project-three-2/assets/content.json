@@ -1,35 +1,118 @@
 [
     {
-        "weekDate" : "1",
-        "completionTime" : "2",
-        "title" : "Introduction",
-        "info" : "Why take this course?",
-        "videos" : "4",
-        "courses" : "some stuff",
-        "readings" : "11",
-        "quizzes" : "0",
-        "opened" : false
-    },
-    {
         "weekDate" : "2",
-        "completionTime" : "3",
-        "title" : "Body 1",
-        "info" : "What is this course",
-        "videos" : "3",
-        "courses" : "more stuff",
-        "readings" : "2",
-        "quizzes" : "1",
-        "opened" : false
+        "completionTime" : "2",
+        "title" : "Biases that get in the way of happiness",
+        "info" : "In this module, you will learn about biases that get in the way of our own happiness. Dr. Laurie Santos explores why we get used to good and bad things in life and how we can deal with growing accustomed to things and making bad predictions about what we will want in the future. Dr. Santos discusses how we compare ourselves to others using reference points and what we can do to deal with our limited attention.",
+        "videoLabel" : "8",
+        "courses" : "8 videos (Total 54 min), 2 readings, 2 quizzes",
+        "readingLabel" : "2",
+        "quizLabel" : "2",
+        "opened" : false,
+        "allVideos" : [
+            {
+                "Title": "Course Introduction: Welcome to Developing Back-End Apps with Node.js & Express",
+                "Duration": 3
+            },
+            {
+                "Title": "What is Back End Development?",
+                "Duration": 7
+            },
+            {
+                "Title": "Introduction to Node.js",
+                "Duration": 3
+            },
+            {
+                "Title": "Expert Viewpoints: Introductory Thoughts on Server-Side JavaScript and Node.js",
+                "Duration": 5
+            },
+            {
+                "Title": "Import and Require",
+                "Duration": 5
+            },
+            {
+                "Title": "Introduction to Server-Side JavaScript",
+                "Duration": 5
+            },
+            {
+                "Title": "Creating a Web Server with Node.js",
+                "Duration": 2
+            },
+            {
+                "Title": "Working with Node.js Modules",
+                "Duration": 4
+            },
+            {
+                "Title": "Overview of Node Package Manager",
+                "Duration": 5
+            }
+        ],
+        "allReadings" : [{
+            "Title": "Welcome",
+            "Duration": 2
+        },
+        {
+            "Title": "Module Summary",
+            "Duration": 2
+        }],
+        "allQuizzes" : [
+            {
+                "Title": "Graded Quiz",
+                "Duration": 20
+            }
+        ]
     },
     {
         "weekDate" : "3",
-        "completionTime" : "4",
-        "title" : "Body 2",
-        "info" : "Whats next",
-        "videos" : "2",
-        "courses" : "a lot of stuff",
-        "readings" : "4",
-        "quizzes" : "1",
-        "opened" : false
+        "completionTime" : "2",
+        "title" : "Behaviors that make us happy",
+        "info" : "In this module, you will learn about behaviors that make us happy. Dr. Laurie Santos discusses behaviors such as engaging in social behaviors, finding time to do the things you love, and practicing healthy habits. Dr. Santos explains how a little bit of extra sleep each night or exercise can make a world of a difference.",
+        "videoLabel" : "7",
+        "courses" : "7 videos (Total 50 min), 2 readings, 2 quizzes",
+        "readingLabel" : "2",
+        "quizLabel" : "2",
+        "opened" : false,
+        "allVideos" : [
+            {
+                "Title": "Asynchronous I/O with Callback Programming",
+                "Duration": 6
+            },
+            {
+                "Title": "Creating Callback Functions",
+                "Duration": 6
+            },
+            {
+                "Title": "Expert Viewpoints: Using Anonymous Callback Functions in Node.js",
+                "Duration": 5
+            },
+            {
+                "Title": "Issues with Callbacks",
+                "Duration": 5
+            },
+            {
+                "Title": "Promises",
+                "Duration": 3
+            },
+            {
+                "Title": "Working with JSON",
+                "Duration": 1
+            },
+            {
+                "Title": "Expert Viewpoints: Using JSON & JavaScript",
+                "Duration": 3
+            }
+        ],
+        "allReadings" : [
+            {
+                "Title": "Module Summary",
+                "Duration": 1
+            }
+        ],
+        "allQuizzes" : [
+            {
+                "Title": "Practice Quiz",
+                "Duration": 2
+            }
+        ]
     }
 ]

@@ -1,85 +1,72 @@
 import { LitElement, html, css } from 'lit';
 import "./project-three-2.js"
+import { IntersectionObserverMixin } from "@lrnwebcomponents/intersection-element/lib/IntersectionObserverMixin.js";
 
-export class WeekList extends LitElement {
+export class WeekList extends IntersectionObserverMixin(LitElement) {
     static get tag() {
         return 'week-list';
     }
     static get properties() {
-        return {
-            weeks: { type: Array },
-            list: { type: String },
+        let props = {};
+        if (super.properties) {
+            props = super.properties;
         }
+        return {
+            ...props,
+            weeks: { type: Array },
     }
+}
 
     constructor() {
         super();
-        this.weeks = [
-            {
-                "weekDate" : "1",
-                "completionTime" : "2",
-                "title" : "Introduction",
-                "info" : "Why take this course?",
-                "videos" : "4",
-                "courses" : "some stuff",
-                "readings" : "11",
-                "quizzes" : "0",
-                "opened" : false
-            },
-            {
-                "weekDate" : "2",
-                "completionTime" : "3",
-                "title" : "Body 1",
-                "info" : "What is this course",
-                "videos" : "3",
-                "courses" : "more stuff",
-                "readings" : "2",
-                "quizzes" : "1",
-                "opened" : false
-            },
-            {
-                "weekDate" : "3",
-                "completionTime" : "4",
-                "title" : "Body 2",
-                "info" : "Whats next",
-                "videos" : "2",
-                "courses" : "a lot of stuff",
-                "readings" : "4",
-                "quizzes" : "1",
-                "opened" : false
+        this.weeks = [];
+        this.updateCalendar();
+    }
+
+    updateCalendar() {
+        fetch(new URL('../assets/content.json', import.meta.url).href).then((response) => {
+            if (response.ok) {
+                return response.json()
             }
-        ];
-        this.list = 'Weeks';
-        
+            return [];
+        })
+        .then((data) => {
+            this.weeks = data;
+        });
     }
 
     
 
     static get styles() {
         return css`
-        :host {
-            display: block;
-        }
-        .wrapper {
-            border: 2px solid black;
-            display: flex;
-        }
-        .item {
-            display: inline-flex;
-        }
+        
     `;
     }
 
     render() {
         return html`
-        <h2>${this.list}</h2>
+        ${this.elementVisible ? 
+            html`
         <div class="wrapper">
             ${this.weeks.map(week => html`
             <div class="item">
-                <project-three-2 title="${week.title}" info="${week.info}" weekDate="${week.weekDate}" completionTime="${week.completionTime}" courses="${week.course}" videos = "${week.videos}" readings="${week.readings}" quizzes="${week.quizzes}" opened="${week.opened}"></project-three-2>
+                <project-three-2 
+                title="${week.title}" 
+                info="${week.info}" 
+                weekDate="${week.weekDate}" 
+                completionTime="${week.completionTime}" 
+                courses="${week.courses}" 
+                videoLabel="${week.videoLabel}" 
+                readingLabel="${week.readingLabel}" 
+                quizLabel="${week.quizLabel}" 
+                opened="${week.opened}"
+                allVideos="${week.allVideos}"
+                allReadings="${week.allReadings}"
+                allQuizzes="${week.allQuizzes}"></project-three-2>
             </div>
             `)}
         </div>
+        ` : ``};
         `;
     }
 }
