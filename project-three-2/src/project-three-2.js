@@ -88,19 +88,16 @@ class ProjectThree2 extends LitElement {
 
   constructor() {
     super();
-    this.weekDate = '1';
-    this.completionTime = 2;
-    this.title = 'Misconceptions about happiness';
-    this.info = 'In this module, you will learn what it means to be happy and why pursuing happiness is not a pointless endeavor. Dr. Santos addresses how our minds lie to us and how the science shows that our misconceptions about money, grades, and social media are holding us back from implementing the techniques studied in positive psychology.';
-    this.courses = '9 videos (Total 55 min), 3 readings, 1 quiz';
-    this.videoLabel = "9";
-    this.readingLabel = "3";
-    this.quizLabel = "1";
+    this.weekDate = '0';
+    this.completionTime = 0;
+    this.title = 'Write week title here';
+    this.info = 'info goes here';
+    this.courses = 'course content goes here';
     this.opened = false;
     this.videos = [];
     this.readings = [];
     this.quizzes = [];
-    this.text = 'hi';
+    this.text = 'text';
     this.length = '';
     this.meme = 'https://i.imgflip.com/3qzub2.jpg?a467376';
   }
@@ -132,7 +129,7 @@ class ProjectThree2 extends LitElement {
               @collapse="${this.collapseStatusChange}">
             <p slot="heading" class="show-title">${this.opened}</p>
             <div class="wrapper">
-          <div class="video-text"><simple-icon class="video-icon" icon="av:slow-motion-video"></simple-icon>${this.videoLabel} Videos</div>
+          <div class="video-text"><simple-icon class="video-icon" icon="av:slow-motion-video"></simple-icon>Videos</div>
             <div class="video-items">
               <ul>
                 ${this.videos.map(activity => html`
@@ -141,7 +138,7 @@ class ProjectThree2 extends LitElement {
               </ul>
           </div>
             <hr>
-          <div class="reading-text"><simple-icon class="reading-icon" icon="chrome-reader-mode"></simple-icon>${this.readingLabel} Readings</div>
+          <div class="reading-text"><simple-icon class="reading-icon" icon="chrome-reader-mode"></simple-icon>Readings</div>
             <div class="reading-items">
               <ul>
                 ${this.readings.map(activity => html`
@@ -150,7 +147,7 @@ class ProjectThree2 extends LitElement {
               </ul>
             </div>
             <hr>
-          <div class="quiz-text"><simple-icon class="quiz-icon" icon="assignment"></simple-icon>${this.quizLabel} Practice exercise</div>
+          <div class="quiz-text"><simple-icon class="quiz-icon" icon="assignment"></simple-icon>Quizzes</div>
           <div class="quiz-items">
               <ul>
                 ${this.quizzes.map(activity => html`
