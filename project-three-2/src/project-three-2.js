@@ -157,6 +157,10 @@ class ProjectThree2 extends LitElement {
           </div>
         </div>
       </a11y-collapse>
+      </div>
+          <hr>
+        </div>
+      </div>
   
     `;
   }
