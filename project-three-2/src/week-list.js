@@ -60,9 +60,9 @@ export class WeekList extends IntersectionObserverMixin(LitElement) {
                 readingLabel="${week.readingLabel}" 
                 quizLabel="${week.quizLabel}" 
                 opened="${week.opened}"
-                allVideos="${week.allVideos}"
-                allReadings="${week.allReadings}"
-                allQuizzes="${week.allQuizzes}"></project-three-2>
+                .videos="${week.videos}"
+                .readings="${week.readings}"
+                .quizzes="${week.quizzes}"></project-three-2>
             </div>
             `)}
         </div>

@@ -1,5 +1,73 @@
 [
     {
+        "weekDate" : "1",
+        "completionTime" : "2",
+        "title" : "Misconceptions about happiness",
+        "info" : "In this module, you will learn what it means to be happy and why pursuing happiness is not a pointless endeavor. Dr. Santos addresses how our minds lie to us and how the science shows that our misconceptions about money, grades, and social media are holding us back from implementing the techniques studied in positive psychology.",
+        "videoLabel" : "9",
+        "courses" : "9 videos (Total 55 min), 3 readings, 1 quiz",
+        "readingLabel" : "3",
+        "quizLabel" : "1",
+        "opened" : false,
+        "videos" : [
+            {
+                "text" : "Why Take Yale's Most Popular Course?",
+                "length" : "11"
+            },
+            {
+                "text" : "What Does It Even Mean to Be Happy?",
+                "length" : "8"
+            },
+            {
+                "text" : "Is Becoming Happier a Selfish Thing to Do?",
+                "length" : "5"
+            },
+            {
+                "text" : "Do Life Circumstances Determine Happiness?",
+                "length" : "3"
+            },
+            {
+                "text" : "What Are the Benefits of Being Happier?",
+                "length" : "6"
+            },
+            {
+                "text" : "Our Mind Lies to Us About Happiness",
+                "length" : "2"
+            },
+            {
+                "text" : "Misconceptions #1: Money & Awesome Stuff",
+                "length" : "6"
+            },
+            {
+                "text" : "Misconceptions #2: Grades & College Admissions",
+                "length" : "4"
+            },
+            {
+                "text" : "Misconceptions #3: Screen Time & Social Media",
+                "length" : "5"
+            }
+            
+        ],
+        "readings" : [{
+            "text" : "Happiness Homework",
+            "length": "10"
+        },
+        {
+            "text" : "Welcome Letter from Laurie",
+            "length": "10"
+        },
+        {
+            "text" : "Key Terms",
+            "length": "10"
+        }],
+        "quizzes" : [
+            {
+                "text" : "Module 1 Quiz",
+                "length": "30"
+            }
+        ]
+    },
+    {
         "weekDate" : "2",
         "completionTime" : "2",
         "title" : "Biases that get in the way of happiness",
@@ -9,56 +77,57 @@
         "readingLabel" : "2",
         "quizLabel" : "2",
         "opened" : false,
-        "allVideos" : [
+        "videos" : [
             {
-                "Title": "Course Introduction: Welcome to Developing Back-End Apps with Node.js & Express",
-                "Duration": 3
+                "text" : "Our Minds Are Bad at Predicting Our Feelings",
+                "length" : "6"
             },
             {
-                "Title": "What is Back End Development?",
-                "Duration": 7
+                "text" : "Happiness Problem #1: We Get Used to Stuff but Don't Know It",
+                "length" : "10"
             },
             {
-                "Title": "Introduction to Node.js",
-                "Duration": 3
+                "text" : "How Can We Deal with Hedonic Adaptation?",
+                "length" : "7"
             },
             {
-                "Title": "Expert Viewpoints: Introductory Thoughts on Server-Side JavaScript and Node.js",
-                "Duration": 5
+                "text" : "Happiness Problem #2: We Compare Ourselves a Lot",
+                "length" : "3"
             },
             {
-                "Title": "Import and Require",
-                "Duration": 5
+                "text" : "Happiness Problem #2: We Compare Ourselves to Other People",
+                "length" : "10"
             },
             {
-                "Title": "Introduction to Server-Side JavaScript",
-                "Duration": 5
+                "text" : "How Can We Deal with Social Comparisons?",
+                "length" : "2"
             },
             {
-                "Title": "Creating a Web Server with Node.js",
-                "Duration": 2
+                "text" : "Happiness Problem #3: Our Attention Is Limited",
+                "length" : "7"
             },
             {
-                "Title": "Working with Node.js Modules",
-                "Duration": 4
-            },
-            {
-                "Title": "Overview of Node Package Manager",
-                "Duration": 5
+                "text" : "How Can We Deal with Limited Attention?",
+                "length" : "5"
             }
+            
         ],
-        "allReadings" : [{
-            "Title": "Welcome",
-            "Duration": 2
+        "readings" : [{
+            "text" : "Happiness Homework",
+            "length": "10"
         },
         {
-            "Title": "Module Summary",
-            "Duration": 2
+            "text" : "Key Terms",
+            "length": "10"
         }],
-        "allQuizzes" : [
+        "quizzes" : [
             {
-                "Title": "Graded Quiz",
-                "Duration": 20
+                "text" : "Module 2 Quiz",
+                "length": "30"
+            },
+            {
+                "text" : "Happiness Homework Checkpoint",
+                "length": "10"
             }
         ]
     },
@@ -72,46 +141,54 @@
         "readingLabel" : "2",
         "quizLabel" : "2",
         "opened" : false,
-        "allVideos" : [
+        "videos" : [
             {
-                "Title": "Asynchronous I/O with Callback Programming",
-                "Duration": 6
+                "text": "What Make Us Happier: Behaviors",
+                "length": "1"
             },
             {
-                "Title": "Creating Callback Functions",
-                "Duration": 6
+                "text": "Social Connection",
+                "length": "8"
             },
             {
-                "Title": "Expert Viewpoints: Using Anonymous Callback Functions in Node.js",
-                "Duration": 5
+                "text": "Kindness",
+                "length": "5"
             },
             {
-                "Title": "Issues with Callbacks",
-                "Duration": 5
+                "text": "Flow & Fun",
+                "length": "9"
             },
             {
-                "Title": "Promises",
-                "Duration": 3
+                "text": "Signature Strengths ",
+                "length": "5"
             },
             {
-                "Title": "Working with JSON",
-                "Duration": 1
+                "text": "Healthy Habits",
+                "length": "10"
             },
             {
-                "Title": "Expert Viewpoints: Using JSON & JavaScript",
-                "Duration": 3
+                "text": "Time Affluence",
+                "length": "8"
             }
         ],
-        "allReadings" : [
+        "readings" : [
             {
-                "Title": "Module Summary",
-                "Duration": 1
+                "text" : "Happiness Homework",
+                "length": "10"
+            },
+            {
+                "text" : "Key Terms",
+                "length": "10"
             }
         ],
-        "allQuizzes" : [
+        "quizzes" : [
             {
-                "Title": "Practice Quiz",
-                "Duration": 2
+                "text" : "Module 3 Quiz",
+                "length": "30"
+            },
+            {
+                "text" : "Happiness Homework Checkpoint",
+                "length": "10"
             }
         ]
     }

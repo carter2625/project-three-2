@@ -3,7 +3,7 @@ import '@lrnwebcomponents/simple-icon/simple-icon.js';
 import '@lrnwebcomponents/simple-icon/lib/simple-icons.js';
 import "@lrnwebcomponents/a11y-collapse/a11y-collapse.js";
 import "@lrnwebcomponents/a11y-collapse/lib/a11y-collapse-group.js";
-import './learning-content.js';
+
 
 
 class ProjectThree2 extends LitElement {
@@ -15,10 +15,10 @@ class ProjectThree2 extends LitElement {
     info: { type: String },
     courses: { type: String }, 
     opened: {type: Boolean, reflect: true, attribute: 'opened-if'},
-    content: { type: Object },
-    allVideos: { type: Array },
-    allReadings: { type: Array },
-    allQuizzes: { type: Array }
+    activityArray: { type: Array },
+    videos: { type: String },
+    readings: { type: String },
+    quizzes: { type: String }
   }
 
   static styles = css` 
@@ -97,9 +97,12 @@ class ProjectThree2 extends LitElement {
     this.readingLabel = "3";
     this.quizLabel = "1";
     this.opened = false;
-    this.allVideos = [];
-    this.allReadings = [];
-    this.allQuizzes = [];
+    this.videos = [];
+    this.readings = [];
+    this.quizzes = [];
+    this.text = 'hi';
+    this.length = '';
+    this.meme = 'https://i.imgflip.com/3qzub2.jpg?a467376';
   }
 
   collapseStatusChange() {
@@ -128,26 +131,35 @@ class ProjectThree2 extends LitElement {
           <a11y-collapse heading-button @expand="${this.collapseStatusChange}"
               @collapse="${this.collapseStatusChange}">
             <p slot="heading" class="show-title">${this.opened}</p>
-        <div class="show-wrapper">
-          <div class="show-video-text"><simple-icon class="video-logo" icon="av:slow-motion-video"></simple-icon>${this.videoLabel} Videos</div>
-            <div class="show-video-items">
+            <div class="wrapper">
+          <div class="video-text"><simple-icon class="video-icon" icon="av:slow-motion-video"></simple-icon>${this.videoLabel} Videos</div>
+            <div class="video-items">
+              <ul>
+                ${this.videos.map(activity => html`
+                <a href="${this.meme}"><li>${activity.text} : ${activity.length} minutes</li></a>
+                `)}
+              </ul>
+          </div>
+            <hr>
+          <div class="reading-text"><simple-icon class="reading-icon" icon="chrome-reader-mode"></simple-icon>${this.readingLabel} Readings</div>
+            <div class="reading-items">
+              <ul>
+                ${this.readings.map(activity => html`
+                <li>${activity.text} : ${activity.length} minutes</li>
+                `)}
+              </ul>
             </div>
             <hr>
-          <div class="show-reading"><simple-icon class="reading-logo" icon="chrome-reader-mode"></simple-icon>${this.readingLabel} Readings</div>
-            <div class="show-reading-items">
-              ${this.allReadings}
-            </div>
-            <hr>
-          <div class="show-quizzes"><simple-icon class="quiz-logo" icon="assignment"></simple-icon>${this.quizLabel} Quizzes</div>
-          <div class="show-quiz-items">
-            ${this.allQuizzes}
+          <div class="quiz-text"><simple-icon class="quiz-icon" icon="assignment"></simple-icon>${this.quizLabel} Practice exercise</div>
+          <div class="quiz-items">
+              <ul>
+                ${this.quizzes.map(activity => html`
+                <li>${activity.text} : ${activity.length} minutes</li>
+                `)}
+              </ul>
           </div>
         </div>
       </a11y-collapse>
-        </div>
-          <hr>
-      </div>
-  </div>
   
     `;
   }
